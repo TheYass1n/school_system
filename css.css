@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: white;
+	width: 100%;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	font-size: 24px;
+	font-weight: bold;
+	direction: rtl;
+}
+
+nav ul {
+	display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    direction: rtl;
+    list-style: none;
+    align-items: baseline;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3)
+
+}
+
+nav ul a{
+	text-decoration: none;
+	font-size: 18px;
+	color: black
+}
+a:hover{
+	color: blue;
+	padding-bottom: 1rem;
+	border-bottom: 3px solid blue;
+}
+a:click{
+	color: blue;
+	padding-bottom: 1rem;
+	border-bottom: 3px solid blue;
+}
+nav ul a svg{
+	width: 22px;
+	margin: 0 5px;
+}
+.by_text{
+	display: flex;
+	justify-content: center;
+}
+.search_box input{
+	padding: .8rem;
+    margin: 1rem;
+    width: 95%;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+input:placeholder{
+	font-size: 14px;
+}
+
+
+table {
+/*  border-collapse: collapse;
+*/  width: 95%;
+margin:auto;
+direction: rtl;
+}
+
+th{
+	background: #BCBCBB;
+	color: white;
+	padding: 1rem 0;
+}
+
+tr{
+	border-radius: 5px;
+}
+td{
+	text-align: center;
+	padding: 10px;
+	font-size: 17px;
+}
+
+h2{
+	text-align: center;
+	margin:10px;
+}
