@@ -112,7 +112,38 @@ h2{
 	text-align: center;
 	margin:10px;
 }
+.selext_all{
+	margin-left: 3rem;
+}
 
+.delate_all, .selext_all {
+	display: flex;
+	align-items: center;
+}
+.selext_all input{
+	width: 20px;
+	height: 20px;
+	margin-left: 6px;
+}
+.delate_all svg{
+width: 16px;
+margin-left:6px;
+fill: white;
+color: white;
+}
+.delate_all{
+	background:red;
+	padding: 5px 12px;
+	color: white;
+	border-radius: 4px;
+}
+
+.select_culam{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 2.2rem;
+	margin-bottom: 2rem;
+}
 footer{
 	background-image: url(header-background.jpg);
 	background-repeat: no-repeat;
