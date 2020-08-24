@@ -59,6 +59,13 @@ nav ul a svg{
 .by_text{
 	display: flex;
 	justify-content: center;
+	position: relative;
+}
+.by_text svg{
+	width: 20px;
+	position: absolute;
+	left: 3rem;
+	top: 1.8rem;
 }
 .search_box input{
 	padding: .8rem;
@@ -75,14 +82,19 @@ input:placeholder{
 
 
 table {
-/*  border-collapse: collapse;
-*/  width: 95%;
+  border-collapse: collapse;
+ width: 95%;
 margin:auto;
 direction: rtl;
+margin-bottom: 2rem;
+}
+
+table, th, td {
+  border: 1px solid #0000001a;
 }
 
 th{
-	background: #BCBCBB;
+	background: #4abeed;
 	color: white;
 	padding: 1rem 0;
 }
@@ -101,3 +113,11 @@ h2{
 	margin:10px;
 }
 
+footer{
+	background-image: url(header-background.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 4rem;
+    width: 100%;
+}
