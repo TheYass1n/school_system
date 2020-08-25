@@ -1,7 +1,16 @@
+@font-face {
+    font-family: Almarai;
+    src: url(fonts/Almarai-Bold.ttf);
+    src: url(fonts/Almarai-Light.ttf);
+    src: url(fonts/Almarai-Regular.ttf);
+
+}
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	border:none;
+	outline: none;
 }
 
 body{
@@ -10,6 +19,11 @@ body{
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    font-family: 'Almarai', sans-serif;
+
+}
+h2, h1, h3{
+	font-family:  'Almarai', sans-serif;
 }
 
 header{
@@ -75,6 +89,7 @@ nav ul a svg{
     display: flex;
     justify-content: center;
     border-radius: 5px;
+    border:1px solid black;
 }
 input:placeholder{
 	font-size: 14px;
@@ -144,6 +159,10 @@ color: white;
 	margin-right: 2.2rem;
 	margin-bottom: 2rem;
 }
+
+tbody{
+	background: white;
+}
 footer{
 	background-image: url(header-background.jpg);
 	background-repeat: no-repeat;
@@ -151,4 +170,33 @@ footer{
     background-position: center;
     height: 4rem;
     width: 100%;
+}
+
+
+/*mobile screens layout*/
+@media only screen and (max-width: 600px) {
+  .table_contener{
+	overflow-x: auto;
+	margin: 0 1rem;
+}
+.sys_name{
+	display: none;
+}
+nav{
+	position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+}
+
+nav ul a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: medium;
+}
+nav ul a svg{
+	margin-bottom: 4px;
+
+}
 }
