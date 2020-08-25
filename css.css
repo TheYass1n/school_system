@@ -74,12 +74,21 @@ nav ul a svg{
 	display: flex;
 	justify-content: center;
 	position: relative;
+	width: 500px;
 }
 .by_text svg{
 	width: 20px;
 	position: absolute;
-	left: 3rem;
+	left: 2rem;
 	top: 1.8rem;
+}
+.search_box{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    margin-top: 3rem;
 }
 .search_box input{
 	padding: .8rem;
@@ -91,10 +100,24 @@ nav ul a svg{
     border-radius: 5px;
     border:1px solid black;
 }
-input:placeholder{
-	font-size: 14px;
+input::placeholder {
+	font-size: 17px;
+	font-family: Almarai;
+}
+input::-webkit-input-placeholder{
+	font-size: 17px;
+	font-family: Almarai;
+	}
+
+input:-ms-input-placeholder{
+font-size: 17px;
+	font-family: Almarai;
 }
 
+
+input:focus{
+	border-color: #3b8aff9e;
+}
 
 table {
   border-collapse: collapse;
@@ -203,5 +226,13 @@ nav ul a{
 nav ul a svg{
 	margin-bottom: 4px;
 
+}
+.search_box{
+	display: block;
+	width: inherit;
+	margin-top: 0;
+}
+.by_text{
+	width: inherit;
 }
 }
