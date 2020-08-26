@@ -75,12 +75,24 @@ nav ul a svg{
 	justify-content: center;
 	position: relative;
 	width: 500px;
+	align-items: center;
+}
+.by_text button{
+	padding: .8rem;
+    height: 2.7rem;
+    color: white;
+    background: #4abeed;
+    display: flex;
+    font-size: 18px;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
 }
 .by_text svg{
 	width: 20px;
-	position: absolute;
+	/*position: absolute;
 	left: 2rem;
-	top: 1.8rem;
+	top: 1.8rem;*/
+	margin-left: 4px;
 }
 .search_box{
 	display: flex;
@@ -93,11 +105,12 @@ nav ul a svg{
 .search_box input{
 	padding: .8rem;
     margin: 1rem;
+    margin-left: 2px;
     width: 95%;
     direction: rtl;
     display: flex;
     justify-content: center;
-    border-radius: 5px;
+    border-radius:  0 5px  5px 0 ;
     border:1px solid black;
 }
 input::placeholder {
@@ -155,8 +168,14 @@ h2{
 	text-align: center;
 	margin:10px;
 }
+
+.edit_student{
+	margin-right: auto;
+	display: flex;
+}
 .selext_all{
 	margin-left: 3rem;
+	margin-right: auto;
 }
 
 .delate_all, .selext_all {
@@ -164,8 +183,8 @@ h2{
 	align-items: center;
 }
 .selext_all input{
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
 	margin-left: 6px;
 }
 .delate_all svg{
@@ -176,9 +195,10 @@ color: white;
 }
 .delate_all{
 	background:red;
-	padding: 5px 12px;
+	padding: 10px 12px;
 	color: white;
 	border-radius: 4px;
+	margin-left: 2rem;
 }
 
 .select_culam{
@@ -186,8 +206,11 @@ color: white;
 	justify-content: flex-end;
 	margin-right: 2.2rem;
 	margin-bottom: 2rem;
+	align-items: center;
 }
-
+.table_navigaion{
+	display: flex;
+}
 tbody{
 	background: white;
 }
@@ -199,6 +222,25 @@ footer{
     height: 4rem;
     width: 100%;
 }
+
+/*************************************************/
+.pagination{
+	direction: rtl;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 12px 18px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
 
 
 /*mobile screens layout*/
@@ -234,5 +276,12 @@ nav ul a svg{
 }
 .by_text{
 	width: inherit;
+}
+.select_culam{
+	flex-direction: column;
+}
+
+.edit_student {
+	margin-bottom: 1rem;
 }
 }
