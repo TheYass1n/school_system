@@ -82,9 +82,10 @@ nav ul a svg{
     height: 2.7rem;
     color: white;
     background: #4abeed;
+    font-family: Almarai;
     display: flex;
     font-size: 18px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 50px 0 0 50px;
     cursor: pointer;
 }
 .by_text svg{
@@ -110,20 +111,20 @@ nav ul a svg{
     direction: rtl;
     display: flex;
     justify-content: center;
-    border-radius:  0 5px  5px 0 ;
-    border:1px solid black;
+    border-radius:  0 50px  50px 0 ;
+    border:1px solid #a0a0a0;
 }
 input::placeholder {
-	font-size: 17px;
+	font-size: 15px;
 	font-family: Almarai;
 }
 input::-webkit-input-placeholder{
-	font-size: 17px;
+	font-size: 15px;
 	font-family: Almarai;
 	}
 
 input:-ms-input-placeholder{
-font-size: 17px;
+font-size: 15px;
 	font-family: Almarai;
 }
 
@@ -139,7 +140,10 @@ margin:auto;
 direction: rtl;
 margin-bottom: 2rem;
 }
-
+table .st_name{
+text-align: start;
+padding-right: 8px;
+}
 table, th, td {
   border: 1px solid #0000001a;
 }
@@ -162,6 +166,10 @@ td{
 	text-align: center;
 	padding: 10px;
 	font-size: 17px;
+}
+
+tr td:nth-child(2){
+	text-align: start;
 }
 
 h2{
