@@ -128,6 +128,7 @@ nav ul a svg{
     align-items: center;
     width: 95%;
     margin: auto;
+    margin-top: 3rem;
 }
 .search_box input{
 	padding: .8rem;
@@ -278,7 +279,6 @@ footer{
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
 
-
 /*mobile screens layout*/
 @media only screen and (max-width: 600px) {
   .table_contener{
@@ -323,4 +323,22 @@ nav ul a svg{
 .box_contener{
 	flex-direction: column;
 }
+}
+
+
+/*tablet screens layout*/
+@media only screen and (min-width: 600px ) and (max-width: 1024px) {
+	.box_contener{
+		width: 100%;
+	    justify-content: center;
+
+	}
+
+	.search_box{
+		flex-direction: column;
+		width: 100%;
+	}
+	.by_text{
+		width: 40%;
+	}
 }
